@@ -40,3 +40,8 @@ install ant' on Ubuntu Linux.
 to obfuscate and optimize it. The jar build options are specified in the file
 **libgdx-proguard-desktop/build.xml** and the ProGuard options are specified in
 **utils/desktop.pro**.
+
+## Resolve the getPointer problem
+
+    -keepclassmembers class * { *** getPointer(); }
+
